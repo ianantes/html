@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../colecao/colecao.html">Coleção</a></li>
+                    <li><a href="../livros/livros.html">Livros</a>
+                        <ul>
+                            <li><a href="cadastro.html">Cadastro</a></li>
+                            <li><a href="../estatisticas/estatisticas.html">Estatisticas</a></li>
+                            <li><a href="#">----</a></li>
+                            <li><a href="#">----</a></li>
+                            <li><a href="#">----</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../compras/compras.html">Compras</a></li>
+                    <li><a href="../conquistas/conquistas.html">Conquistas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <style> 
+        textarea#test {
+          resize: none;
+        }
+        </style>
+    <br>
+    <br>
+    <br>
+
+    <form id="cadastro">
+        <section class="grid grid-template-1">
+            <main>
+                <section class="container-0 flex-0 flex-wrap-0">
+                    <label for="name"id="capa">Carregar capa: </label>
+                    <input type="file" id="capa" name="capa"
+                    accept="image/png, image/jpeg" /><br><br>
+                </section>    
+
+                <br><br><br><br><br>
+
+                <section class="container-2 flex-2 flex-wrap-2">
+                    <label for="resumo">Resumo:</label><br>
+                    <textarea name="resumo" id="test" cols="220" rows="20"></textarea><br>
+                </section>
+            </main>
+
+            <aside>
+                <section class="container-1 flex-1 flex-wrap-1">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="nome do livro"id="nome"><br><br>
+                    
+                    <label for="autor">Autor:</label>
+                    <input type="text" placeholder="autor do livro" id="autor"><br><br>
+
+                    <label for="pag">Páginas: </label>
+                    <input type="number" placeholder="Número de páginas"id=pag><br><br>
+
+                    <label for="valor">Valor: </label> 
+                    <input type="text" placeholder="Valor do livro"id=valor><br><br>
+
+                    <label for="editora">Editora:</label>
+                    <input type="text" placeholder="Editora do livro"id="editora"><br><br>
+
+                    <label for ="categoria">Categoria:</label>   
+                    <select name="categoria" id="categoria">
+                        <option>-----------------</option>
+                        <option>Fantasia Medieval</option>
+                        <option>Fantasia Futurista</option>
+                        <option>Técnico </option>
+                        <option>Terror</option>
+                    </select>
+            
+                    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                    <label for="Nota">Nota:</label>
+                    <div class="estrelas">
+                        <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                        <label for="cm_star-1"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                        <label for="cm_star-2"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                        <label for="cm_star-3"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                        <label for="cm_star-4"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                        <label for="cm_star-5"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                    </div>
+
+                </section>
+            </aside>
+
+            <article>
+                <section class="container-3 flex-3 flex-wrap-3"> 
+
+                    <label for="data1">Data de compra:</label>
+                    <input type="date" id="data1" name="data1">
+
+                    <label for="data2">Data inicio da leitura:</label>
+                    <input type="date" id="data2" name="data2">  
+
+                    <label for="data3">Data termino da leitura:</label>
+                    <input type="date" id="data3" name="data3">
+
+                </section>
+            </article>
+
+            <footer>
+                <section class="container-4 flex-4 flex-wrap-4">
+                    <label for="favcolor"><h2>Selecione o estado da leitura: </h2>
+                        <p>Verde:    Livro terminado<br>
+                        Vermelho: Livro não iniciado<br>  
+                        Amarelo:  Leitura em andamento</p>
+                    </label>
+
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+                    <button id="myBtn" class="button" style="vertical-align:middle"><span>Salvar</span></button>
+                </section>
+            </footer>
+        </section>
+    </form>
+
+</body>
+</html>

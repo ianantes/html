@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+     <div id="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="src/colecao/colecao.html">Coleção</a></li>
+            <li><a href="src/livros/livros.html">Livros</a>
+                <ul>
+                    <li><a href="src/cadastro/cadastro.html">Cadastro</a></li>
+                    <li><a href="src/estatisticas/estatisticas.html">Estatisticas</a></li>
+                    <li><a href="#">----</a></li>
+                    <li><a href="#">----</a></li>
+                    <li><a href="#">----</a></li>
+                </ul>
+            </li>
+            <li><a href="src/compras/compras.html">Compras</a></li>
+            <li><a href="src/conquistas/conquistas.html">Conquistas</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    
+    <div>
+    <section class="grid grid-template-1">
+        <aside>
+            <section class="lateral">
+            
+        </section>
+        
+        </aside>
+        <main>
+            <article class="projeto">
+
+                <section>
+                    <h2>Um pouco sobre mim</h2>
+
+                    <p> Estou cursando Gradudação em Ciência da Computação na UERJ onde participei de projetos com realidade virtual onde completei uma 
+                        bolça de iniciaçãocientifica (CNPQ), e tambêm fiz parte do projeto de extenção de robotica onde participei de algumas competiçoes 
+                        a nivel nácional. Durante essa fase de minha gradudação pratiquei muitos conceitos de back-end porem começei a me interessar muito pelo 
+                        front-end e decidi aprender sozinho pois durante a gradudação aprendi que muita coisa a faculdade nao irá ensinar e terei que procurar por 
+                        fora e assim me atualizar pois o mercado constantemente muda com o surgimentos de novas linguagens e frameworks. 
+                    </p>
+
+                </section>
+
+                <section>
+                    <h2>A ideia do projeto:</h2>
+
+                    <p> Tive a ideia deste projeto por conta do meu gosto pela leitura. Achei interessante para meu primeiro projeto web
+                        ser o desenvolvimento de algo ligado a leitura. Assim cheguei a este projeto onde poderei organizar uma coleção
+                        de livros onde poderei gerar dados como velocidade de leitura, gastos, listas de livros ainda para ler e quais 
+                        livros já terminei ou até quantos livros li durante um determinado periodo. </p>
+                    
+                    <p> Nesta primeira etapa do projeto estou praticando conceitos Básicos de HTML5/CSS3 , JavaScritp e Banco de dados.
+                        posteriormente pretendo aplicar funcionalidades onde poderei utilizar o que aprendi estudando Angular e conceitos
+                        de estátiscas na parte de Estatisticas onde poderei gerar graficos com base nos dados adquiridos dos livros cadastrados
+                        no site.</p>
+                </section>
+
+                <section>
+                    <h2>Status do projeto:</h2>
+
+                    <p> No momento o projeto está em sua fase primária estou modelando ainda as páginas do projeto. Terminei a primeira fase da página de 
+                        cadastro de livros. Agora pretendo começar a fazer a página de coleção onde podemos visualizar todos os livros cadastrados.</p>
+                </section>
+
+                <section>
+                    <h2>funcionalidades do projeto:</h2>
+
+                    <p> / <span style="color:blue;font-weight:'Montserrat', sans-serif">Coleção</span> /
+                          <span style="color:rgb(5, 97, 10);font-weight:'Montserrat', sans-serif">Cadastrar Livros</span> / 
+                          <span style="color:rgb(180, 8, 8);font-weight:'Montserrat', sans-serif">Estatisticas </span>/
+                          <span style="color:rgb(211, 208, 24);font-weight:'Montserrat', sans-serif"> Compras</span>/
+                          <span style="color:rgb(255, 145, 0);font-weight:'Montserrat', sans-serif">Conquistas</span>/
+                    </p>
+
+                    <h2><span style="color:blue;font-weight:'Montserrat', sans-serif">Coleção:</span></h2>
+                    <p>Na funcionalidade coleção poderemos ver todos seus livros cadastrados e organizados de acordo por Data, Editoras, ordem Alfabétiica ou Categoria.
+                    Ao clicar em cada livro você podera ver sua respectiva ficha com todos os seus dados. </p>
+
+                    <h2><span style="color:rgb(5, 97, 10);font-weight:'Montserrat', sans-serif">Cadastrar Livros:</span></h2>
+                    <p>A funcionalidade cadastradar livros foi colocada na pagina com nome Cadastro. 
+                    La voce encontrara um formulario onde ao finalizar o seu preenximento os dados do livro seram salvos e poderam ser consultados posteriormente
+                    na página coleção caso deseje ver seus livros cadastrados.</p>
+
+                    <h2><span style="color:rgb(180, 8, 8);font-weight:'Montserrat', sans-serif">Estatisticas: </span> </h2>
+                    <p>Esta funcionalidade tem o intuito ser uma forma do usuario poder descobrir coisas como quantos livros leu por ano, velocidade de leitura , gastos 
+                    com livros. futuramente desejo expandir esta funcionalidade utilizando ideis durante meu aprendizado com ciencia de dados gerando graficos e informações
+                    atraves da alimentação do banco de dados.
+                    </p> 
+
+                    <h2><span style="color:rgb(211, 208, 24);font-weight:'Montserrat', sans-serif"> Compras:</span></h2>
+                    <p>A funcionalidade de compra fara com que o usuario posso ter um filtro de lugares para comprar os livros que ele colocou que deseja coomprar e com esse filtro
+                    ele podera saber a variação do preço nos sites que ele está acompanhando o livro a partir do momento que o livro foi colocado na lista de compras e poderá tambem
+                    marcar um valor desejado que ele queira pagar no livro e assim o site mandara um email informando onde e quando o livro chegou ao valor desejado.
+                    </p>
+
+                    <h2><span style="color:rgb(255, 145, 0);font-weight:'Montserrat', sans-serif">Conquistas:</span></h2>
+                    <p>A funcionalidade conquistas será uma forma de rankear os usuarios por número de trofeus que eles ganharam comforme cumprirem objetivos como ler 12 livros durante o
+                    periodo de um ano. Será uma forma do usuario se divertir com os amigos que tambem utilizam o site. Está ideia tive por conta de minha experiencia em projetos anteriores 
+                    utilizando elementos de jogos como conquistas/recompenças. 
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Tecnologias utilizadas:</h2>
+                    <p>HTML5/CSS3 <br> Bootstrap <br> JavaScritp <br> Angular <br> Banco de dados(ainda decidindo)</p>
+                </section>
+
+            </article>
+
+        </main>    
+    </section>
+    </div>
+
+   
+</body>
+<script src="script.js"></script>
+</html>

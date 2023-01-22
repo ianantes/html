@@ -1,0 +1,484 @@
+/*----------------MENU---------*/
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #5631Fb;
+    /*#095169 */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #5631FA;
+    /*#76C893 / ORIGINAL#53ba83; */
+}
+
+ul li {
+    display: inline;
+    position: relative;
+}
+
+ul li a {
+    color: rgb(231, 241, 236);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+ul li a:hover {
+    background-color: #20b8fe;
+    /*#53ba83; */
+}
+
+/*----------------MENU---------*/
+
+/*----------------SUB MENU---------*/
+ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul ul {
+    width: 150px
+}
+
+ul ul li a {
+    display: block;
+}
+
+/*----------------SUB MENU---------*/
+
+
+body {
+    background-color: #181c30;
+    /*#006699; */
+    color: #fc6821;
+
+}
+
+.grid-template-1 {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    display: grid;
+    grid-template:
+        "aside  main  article" auto
+        "aside  main  article" auto "aside  main  footer " auto /
+        auto auto auto;
+
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+form {
+    font-family: sans-serif;
+    width: 100%;
+    padding: 10px 50px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*----------------CONFIG DO FLAX---------*/
+.flex-0 {
+    display: flex;
+}
+
+.flex-wrap-0 {
+    flex-wrap: wrap;
+}
+
+.flex-item-0 {
+    flex: 1;
+}
+
+.flex-1 {
+    display: flex;
+}
+
+.flex-wrap-1 {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    display: flex;
+}
+
+.flex-wrap-2 {
+    flex-wrap: wrap;
+}
+
+.flex-item-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    display: flex;
+}
+
+.flex-wrap-3 {
+    flex-wrap: wrap;
+}
+
+.flex-item-3 {
+    flex: 2;
+}
+
+.flex-4 {
+    display: flex;
+}
+
+.flex-wrap-4 {
+    flex-wrap: wrap;
+}
+
+.flex-item-4 {
+    flex: 2;
+}
+
+/*----------------CONFIG DO FLAX---------*/
+
+/*------------------CONTAINERS--------------------------*/
+.container-0 {
+    max-width: 400px;
+    /* largura maxima*/
+    height: 400px;
+    /* comprimento*/
+    margin: 10 auto;
+    margin-left: 300px;
+    /* distancia da lateral*/
+    padding: 10px;
+    /* distancia dos itens da borda*/
+    border: 5px solid rgb(70, 35, 80);
+    /* grossura da borda / cor da borda */
+
+    font-size:medium;
+
+    align-self:center;
+    
+
+    align-items:stretch;
+   
+    align-content: center;
+  
+
+    justify-self:start;
+    
+    justify-items:stretch;
+    
+    justify-content:space-between;
+}
+
+.container-1 {
+    max-width: 400px;
+    /* largura maxima*/
+    height: 850px;
+    /* comprimento*/
+    margin: 1 auto;
+    /* distancia da lateral*/
+    padding: 0px;
+    /* distancia dos itens da borda*/
+    border: 5px solid rgb(70, 35, 80);
+    /* grossura da borda / cor da borda */
+
+    font-size: larger;
+
+
+    align-self: flex-end;
+    /*A propriedade CSS substitui o valor de um item de grade ou flex.
+      Em Grid, alinha o item dentro da área da grade . 
+      No Flexbox, alinha o item no eixo cruzado .align-self align-items*/
+
+    align-items: center;
+    /*A propriedade CSS align-items define o align-selfvalor em todos os filhos diretos como um grupo.
+     No Flexbox, ele controla o alinhamento dos itens no Cross Axis . No Grid Layout,
+     ele controla o alinhamento dos itens no Block Axis dentro de sua área de grid .*/
+
+    align-content: space-around;
+    /*A propriedade CSS align-content
+     efine a distribuição do espaço entre e ao redor dos itens de conteúdo ao longo do
+     eixo cruzado de um flexbox ou do eixo de bloco de uma grade - posiciona eixo Y*/
+
+    justify-self:flex-end;
+    /*A propriedade CSS justify-self define a forma como uma caixa é justificada dentro
+     de seu contêiner de alinhamento ao longo do eixo apropriado.*/
+
+    justify-items:center;
+    /*https://developer.mozilla.org/en-US
+    /docs/Web/CSS/justify-items*/
+    justify-content: space-evenly;
+    /*A propriedade CSS justify-content define como o navegador distribui o espaço 
+    entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível
+     e do eixo embutido de um contêiner de grade.*/
+}
+
+.container-2 {
+    max-width: 1000px;
+    /* largura maxima*/
+    width: 1000px;
+
+    height: 350px;
+    max-height: 350px;
+
+    margin: 0 auto;
+    margin-left: 20px;
+    /* distancia da lateral*/
+    padding: 0px;
+    border: 2px solid #ccc;
+
+    box-sizing: content-box;
+    resize: none;
+
+    border-radius: 4px;
+    border: 5px solid rgb(70, 35, 80);
+    /* grossura da borda / cor da borda */
+
+    resize: none;
+
+    align-self:start;
+    
+
+    align-items:stretch;
+   
+    align-content: center;
+  
+
+    justify-self:start;
+    
+    justify-items:start;
+    
+    justify-content:start;
+
+    font-size: large;
+ }
+
+.container-3 {
+    max-width: 400px;
+    /* largura maxima*/
+    width: 400px;
+    max-height: 300px;
+    height: 300px;
+    /* comprimento*/
+
+    margin: 1 auto;
+    /* distancia da lateral*/
+    padding: 0px;
+    /* distancia dos itens da borda*/
+    border: 5px solid rgb(70, 35, 80);
+    /* grossura da borda / cor da borda */
+
+    font-size: medium;
+
+    display:flex;
+
+    align-self: flex-end;
+    /*A propriedade CSS substitui o valor de um item de grade ou flex.
+      Em Grid, alinha o item dentro da área da grade . 
+      No Flexbox, alinha o item no eixo cruzado .align-self align-items*/
+
+    align-items: center;
+    /*A propriedade CSS align-items define o align-selfvalor em todos os filhos diretos como um grupo.
+     No Flexbox, ele controla o alinhamento dos itens no Cross Axis . No Grid Layout,
+     ele controla o alinhamento dos itens no Block Axis dentro de sua área de grid .*/
+
+    align-content: space-around;
+    /*A propriedade CSS align-content
+     efine a distribuição do espaço entre e ao redor dos itens de conteúdo ao longo do
+     eixo cruzado de um flexbox ou do eixo de bloco de uma grade - posiciona eixo Y*/
+
+    justify-self:flex-end;
+    /*A propriedade CSS justify-self define a forma como uma caixa é justificada dentro
+     de seu contêiner de alinhamento ao longo do eixo apropriado.*/
+
+    justify-items:center;
+    /*https://developer.mozilla.org/en-US
+    /docs/Web/CSS/justify-items*/
+    justify-content: space-evenly;
+    /*A propriedade CSS justify-content define como o navegador distribui o espaço 
+    entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível
+     e do eixo embutido de um contêiner de grade.*/
+}
+
+.container-4 {
+    max-width: 400px;
+    /* largura maxima*/
+    height: 400px;
+    /* comprimento*/
+    margin: 1 auto;
+    /* distancia da lateral*/
+    padding: 0px;
+    /* distancia dos itens da borda*/
+    border: 5px solid rgb(70, 35, 80);
+    /* grossura da borda / cor da borda */
+
+    font-size: large;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    align-self: flex-end;
+    justify-self: center;
+
+    justify-items: stretch;
+    align-items: center;
+}
+
+/*------------------CONTAINERS--------------------------*/
+
+/*CONTAINER-0*/
+label#capa {
+    width: 30px;
+    
+}
+
+input#capa {
+    width: 120px;
+}
+
+/*CONTAINER-1*/
+label#nome,
+label#autor,
+label#pag,
+label#valor,
+label#editora {
+    width: 200px;
+
+}
+
+input#nome,
+input#autor,
+input#pag,
+input#valor,
+input#editora {
+    width: 300px;
+    height: 30px;
+
+}
+
+select#categoria {
+    width: 300px;
+    height: 30px;
+
+}
+
+label#categoria {
+    width: 200px;
+
+}
+
+.estrelas input[type=radio] {
+    display: none;
+    
+}
+
+.estrelas label i.fa:before {
+    content: '\f005';
+    color: #FC0;
+    padding-right: 5px;
+}
+
+.estrelas input[type=radio]:checked~label i.fa:before {
+    color: #CCC;
+    
+}
+
+/*CONTAINER-3*/
+input#data1,
+input#data2,
+input#data3 {
+    width: 300px;
+    height: 30px;
+}
+
+label#data1,
+label#data2,
+label#data3 {
+    width: 300px;
+    height: 30px;
+
+}
+
+/*CONTAINER-4*/
+input#favcolor {
+    width: 50px;
+    height: 50px;
+}
+
+label#favcolor {
+    width: 100px;
+    height: 100px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #53ba83;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 90px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+color {
+    color: #53ba83;
+}
